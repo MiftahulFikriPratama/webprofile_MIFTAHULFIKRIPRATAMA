@@ -1,0 +1,195 @@
+/* Gaya untuk navbar */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Membuat menu berada di sebelah kanan */
+}
+
+.navbar li {
+    margin-left: 20px; /* Menggunakan margin kiri untuk mengatur jarak antara menu */
+    transition: border-color 0.3s;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Gaya untuk tautan saat dihover */
+.navbar a:hover {
+    color: #000000;
+}
+
+/* Gaya untuk menu saat dihover */
+.navbar li:hover {
+    border-color: transparent; /* Menghilangkan garis bawah saat dihover */
+}
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f6f6f6;
+}
+
+.header {
+background-color: #007BFF;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+.about {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.description {
+font-size: 18px;
+margin-bottom: 30px;
+}
+
+.cta-button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #007BFF;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+font-size: 18px;
+}
+
+.cta-button:hover {
+background-color: #0056b3;
+}
+
+.opening {
+    display: flex;
+    align-items: center;
+}
+
+.opening img {
+    margin-right: 20px; /* Menambahkan margin kanan antara gambar dan teks */
+}
+
+
+
+
+/* Gaya untuk kotak-kotak */
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Menggeser kontainer ke atas */
+    background-color: #f6f6f6;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(9, 19, 211, 0.1);
+}
+
+/* Gaya untuk teks di dalam kotak */
+.box p {
+    margin: 0;
+}
+
+/* Gaya untuk garis yang membedakan box */
+.box + .box {
+    border-left: none;
+}
+
+
+
+.event-item {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: row-reverse; /* Untuk meletakkan gambar di sebelah kanan */
+}
+
+.event-image {
+    flex: 1;
+    margin-left: 20px; /* Jarak antara teks dan gambar */
+}
+
+.event-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.event-details {
+    flex: 2;
+}
+
+/* media query untuk membuat tampilan responsif di perangkat seluler */
+@media (max-width: 768px) {
+    .event-item {
+        flex-direction: column;
+    }
+
+    .event-image {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+section:last-child {
+    margin-bottom: 0; /* Menghapus margin bawah pada elemen <section> terakhir */
+}
+
+
+
+/* Centering the social icons horizontally and vertically */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Memberikan latar belakang hitam */
+    height: 100px; /* Atur tinggi footer sesuai kebutuhan Anda */
+}
+
+/* Mengubah warna ikon menjadi putih */
+.social-icons a i {
+    color: white;
+}
+
+/* Mengubah warna ikon menjadi biru saat dihover */
+.social-icons a:hover i {
+    color: #007BFF;
+}
+/* Mengubah ukuran ikon */
+.social-icons a i {
+    font-size: 40px; /* Sesuaikan ukuran ikon sesuai keinginan Anda */
+    margin: 20px; /* Mengatur jarak antara ikon */
+}
+
